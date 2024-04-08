@@ -32,5 +32,14 @@ final class SwiftSelfLearningTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func /*skip_*/testB() {
+        print(#function)
+    }
+
+    // func test<System Under Test>_<Condition or stage change>_<Expected Result>() { }
+    func testSignUpFromModel_WhenInfomationProvided_PasswordShouldMatchRepeatPassword() {
+        
+    }
 
 }
