@@ -14,6 +14,8 @@
 		4DA2652B2BBD04A60030D7D0 /* SwiftSelfLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA2652A2BBD04A60030D7D0 /* SwiftSelfLearningTests.swift */; };
 		4DA265352BBD04A60030D7D0 /* SwiftSelfLearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA265342BBD04A60030D7D0 /* SwiftSelfLearningUITests.swift */; };
 		4DA265372BBD04A60030D7D0 /* SwiftSelfLearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA265362BBD04A60030D7D0 /* SwiftSelfLearningUITestsLaunchTests.swift */; };
+		5BA4897D2BC5830C00BA80E7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5BA4897C2BC5830C00BA80E7 /* Alamofire */; };
+		5BA489812BC584B700BA80E7 /* APIManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA489802BC584B700BA80E7 /* APIManage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		4DA265302BBD04A60030D7D0 /* SwiftSelfLearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSelfLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA265342BBD04A60030D7D0 /* SwiftSelfLearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSelfLearningUITests.swift; sourceTree = "<group>"; };
 		4DA265362BBD04A60030D7D0 /* SwiftSelfLearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSelfLearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BA4897E2BC5832E00BA80E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5BA489802BC584B700BA80E7 /* APIManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA4897D2BC5830C00BA80E7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +99,8 @@
 		4DA265182BBD04A40030D7D0 /* SwiftSelfLearning */ = {
 			isa = PBXGroup;
 			children = (
+				5BA4897F2BC5849E00BA80E7 /* API */,
+				5BA4897E2BC5832E00BA80E7 /* Info.plist */,
 				4DA265192BBD04A40030D7D0 /* SwiftSelfLearningApp.swift */,
 				4DA2651B2BBD04A40030D7D0 /* ContentView.swift */,
 				4DA2651D2BBD04A60030D7D0 /* Assets.xcassets */,
@@ -127,6 +134,14 @@
 			path = SwiftSelfLearningUITests;
 			sourceTree = "<group>";
 		};
+		5BA4897F2BC5849E00BA80E7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5BA489802BC584B700BA80E7 /* APIManage.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +158,9 @@
 			dependencies = (
 			);
 			name = SwiftSelfLearning;
+			packageProductDependencies = (
+				5BA4897C2BC5830C00BA80E7 /* Alamofire */,
+			);
 			productName = SwiftSelfLearning;
 			productReference = 4DA265162BBD04A40030D7D0 /* SwiftSelfLearning.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +233,9 @@
 				Base,
 			);
 			mainGroup = 4DA2650D2BBD04A30030D7D0;
+			packageReferences = (
+				5BA4897B2BC5830C00BA80E7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 4DA265172BBD04A40030D7D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA489812BC584B700BA80E7 /* APIManage.swift in Sources */,
 				4DA2651C2BBD04A40030D7D0 /* ContentView.swift in Sources */,
 				4DA2651A2BBD04A40030D7D0 /* SwiftSelfLearningApp.swift in Sources */,
 			);
@@ -425,6 +447,7 @@
 				DEVELOPMENT_TEAM = 4UZ93CCBD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftSelfLearning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +477,7 @@
 				DEVELOPMENT_TEAM = 4UZ93CCBD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftSelfLearning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5BA4897B2BC5830C00BA80E7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5BA4897C2BC5830C00BA80E7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BA4897B2BC5830C00BA80E7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4DA2650E2BBD04A30030D7D0 /* Project object */;
 }
